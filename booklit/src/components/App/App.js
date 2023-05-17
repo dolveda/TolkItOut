@@ -6,9 +6,12 @@ import BrowseList from '../../pages/BrowseList/BrowseList';
 import Search from '../../pages/Search/Search';
 import Book from '../../pages/Book/Book';
 
+import Header from '../Header';
+
 function App() {
   return (
     <div className="App">
+      <Header />
       <Routes>
         <Route path='/' element={<Main />}/>
         <Route path='/browse' element={<BrowseList />}/>
