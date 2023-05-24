@@ -1,5 +1,5 @@
 # Tolk It Out:
-Welcome to Tolk It Out! This is an app for those interested in the works of OG fantasy author J.R.R. Tolkien. Built with the Open Library API, the app pulls information on 100 titles by Tolkien and presents them in a list to browse, as well offering a search feature to narrow down the titles you are interested in. Each book in the list is a link which will direct you to a page detailing certain information for the book, and also includes a link to Open Library's web page for a more in depth description of the book. Enjoy browsing and searching through the works of J.R.R. Tolkien tto find books you love as well as unfamiliar works you have yet to love!
+Welcome to Tolk It Out! This is an app for those interested in the works of OG fantasy author J.R.R. Tolkien. Built with the Open Library API, the app pulls information on 100 titles by Tolkien and presents them in a list to browse, as well offering a search feature to narrow down the titles you are interested in. Each book in the list is a link which will direct you to a page detailing certain information for the book, and also includes a link to Open Library's web page for a more in depth description of the book. Enjoy browsing and searching through the works of J.R.R. Tolkien to find books you love as well as unfamiliar works you have yet to love!
 
 ## Technologies Used: 
 This app was created using:
@@ -10,6 +10,7 @@ This app was created using:
 -Open Library Search API
 
 ## Getting Started:
+tolk-it-out.netlify.app
 Simply click the above link to navigate to the main page:
 ![main](/screenshots/TIO-Main.png)
 
