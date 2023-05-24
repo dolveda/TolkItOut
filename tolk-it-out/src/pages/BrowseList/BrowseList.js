@@ -2,6 +2,7 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import Search from '../../components/Search/Search';
 import { Link } from 'react-router-dom';
+import './BrowseList.css';
 
 export default function BrowseList(props) {
   const [books, setBooks] = useState("");
@@ -45,15 +46,14 @@ export default function BrowseList(props) {
   const loaded = () => {
     return (
       <div className='bookList'>
-        <Search term={search} searchKeyword={handleSearch}/>
+        <Search term={search} searchKeyword={handleSearch} className='search' />
         {search.length < 1 ?
         <ul className='bookList'>
-          {bookList.map((item, i) => {
+          {bookList.map((item) => {
             return (
-              <li key = {i} className='bookList-item'>
-              <i className='icon'></i>
+              <li className='bookList-item'>
               &nbsp;
-              <Link to={`/book/${item.title}`} state={{item:item}}>
+              <Link className='link' to={`/book/${item.title}`} state={{item:item}}>
                 {item.title}
               </Link> 
               </li>
@@ -67,7 +67,9 @@ export default function BrowseList(props) {
               <li key = {i} className='bookList-item'>
               <i className='icon'></i>
               &nbsp;
-              {item.title}
+              <Link className='link' to={`/book/${item.title}`} state={{item:item}}>
+                {item.title}
+              </Link> 
               </li>
             );
           })}

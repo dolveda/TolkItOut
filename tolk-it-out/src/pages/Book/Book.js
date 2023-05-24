@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import './Book.css'
 
 export default function Book() {
     const location = useLocation()
@@ -15,16 +16,16 @@ export default function Book() {
                 <br/>
                 <div className="bookInfo">
                     <h3>Info:</h3>
-                    <ul>
-                        <li>First Published: {item.first_publish_year}</li>
-                        <li>Editions: {item.edition_count}</li>
-                        <li>Average Rating: {item.ratings_average}</li>
-                        <li>Time: {item.time}</li>
-                        <li>Characters: {item.person}</li>
-                        <li>Places: {item.place}</li>
+                    <ul className="info-list" >
+                        <li className="info-item">First Published: {item.first_publish_year}</li>
+                        <li className="info-item">Editions: {item.edition_count}</li>
+                        <li className="info-item">Average Rating: {item.ratings_average}</li>
+                        <li className="info-item">Time: {item.time}</li>
+                        <li className="info-item">Characters: {item.person}</li>
+                        <li className="info-item">Places: {item.place}</li>
                     </ul>
                     <br/>
-                    <section className="link">
+                    <section className="OL-link">
                         <p>For more info please click the following link to Open Library and select your language:</p>
                         <a href={"https:/openlibrary.org" + item.key} target="_blank" rel="noopener noreferrer">{item.title}</a>
                     </section>

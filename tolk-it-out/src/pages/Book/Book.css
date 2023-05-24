@@ -1,0 +1,35 @@
+.list-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.info-item {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: darkslategray;
+    color: whitesmoke;
+    list-style-type: none;
+}
+
+.OL-link {
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    background-color: darkslategray;
+    color: whitesmoke;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bookInfo {
+    justify-content: center;
+}
+
+a {
+    color: skyblue;
+}

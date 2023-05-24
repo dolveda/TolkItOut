@@ -1,0 +1,25 @@
+*{
+    justify-content: center;
+}
+
+.bookList {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    font-size: 22px;
+    margin-right: 3vmin;
+}
+
+.bookList-item {
+    background: darkslategray;
+    padding: 10px;
+    padding-top: 5px;
+    margin: 10px;
+    border-radius: 5%;
+    width: 45%;
+}
+
+.link {
+    color: whitesmoke;
+
+}

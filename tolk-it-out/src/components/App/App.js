@@ -5,7 +5,7 @@ import Main from '../../pages/Main/Main';
 import BrowseList from '../../pages/BrowseList/BrowseList';
 import Book from '../../pages/Book/Book';
 
-import Header from '../Header';
+import Header from '../Header/Header';
 
 function App() {
   return (

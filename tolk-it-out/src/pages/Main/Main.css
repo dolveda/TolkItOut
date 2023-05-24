@@ -1,0 +1,17 @@
+body {
+    background-image: url(../../images/book-background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vmin 100vmin;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.Main-Page {
+    width: 30%;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    background-color: darkslategray;
+    color: whitesmoke;
+}
