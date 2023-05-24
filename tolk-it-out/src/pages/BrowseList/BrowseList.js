@@ -37,8 +37,6 @@ export default function BrowseList(props) {
     }
   };
 
-  console.log(searchResults);
-
   const loading = () => {
     return <h1>Loading...</h1>
   }
@@ -47,10 +45,11 @@ export default function BrowseList(props) {
     return (
       <div className='bookList'>
         <Search term={search} searchKeyword={handleSearch}/>
+        {search.length < 1 ?
         <ul className='bookList'>
           {bookList.map((item, i) => {
             return (
-            <li key = {i} className='bookList-item'>
+              <li key = {i} className='bookList-item'>
               <i className='icon'></i>
               &nbsp;
               {item.title}
@@ -58,6 +57,19 @@ export default function BrowseList(props) {
             );
           })}
         </ul>
+        :
+        <ul className='bookList'>
+          {searchResults.map((item, i) => {
+            return (
+              <li key = {i} className='bookList-item'>
+              <i className='icon'></i>
+              &nbsp;
+              {item.title}
+              </li>
+            );
+          })}
+        </ul>
+        }
       </div>
     )
   };
