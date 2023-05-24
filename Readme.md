@@ -13,16 +13,16 @@ This app was created using:
 https://tolk-it-out.netlify.app 
 
 Simply click the above link to navigate to the main page:
-![main](../screenshots/TIO-Main.png)
+    ![main](../screenshots/TIO-Main.png)
 
 After you've read the description, navigate to the Browse/Search page to begin browsing books:
-![browse](../screenshots/TIO-Browse.png)
+    ![browse](../screenshots/TIO-Browse.png)
 
 Type in the name of a title you are interested in to narrow the displayed results and find your book quickly:
-![search](../screenshots/TIO-Search.png)
+    ![search](../screenshots/TIO-Search.png)
 
 Once you've found your desired title, click on the title to navigate to the book's detail page, and once finished you can navigate back to the Browse/Search page or the Home Page:
-![book](../screenshots/TIO-Book.png)
+    ![book](../screenshots/TIO-Book.png)
 
 ## What's Next:
 Future implementations would ideally include an image of the book cover in the Book page, and integrate an API which would include more information about the selected book.
