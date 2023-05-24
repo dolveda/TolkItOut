@@ -4,10 +4,11 @@
 
 .bookList {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     list-style: none;
     font-size: 22px;
-    margin-right: 3vmin;
+    margin-right: 2.5vmin;
 }
 
 .bookList-item {
