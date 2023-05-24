@@ -3,14 +3,15 @@ Welcome to Tolk It Out! This is an app for those interested in the works of OG f
 
 ## Technologies Used: 
 This app was created using:
--HTML
--CSS
--JavaScript
--React 
--Open Library Search API
+    -HTML
+    -CSS
+    -JavaScript
+    -React 
+    -Open Library Search API
 
 ## Getting Started:
-tolk-it-out.netlify.app
+https://tolk-it-out.netlify.app 
+
 Simply click the above link to navigate to the main page:
 ![main](/screenshots/TIO-Main.png)
 
