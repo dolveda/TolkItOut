@@ -1,8 +1,11 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import Search from '../../components/Search/Search';
 
 export default function BrowseList(props) {
   const [books, setBooks] = useState("");
+  const [search, setSearch] = useState("");
+  const [searchResults, setSearchResults] = useState([]);
   const [error, setError] = useState("");
 
   
@@ -14,29 +17,32 @@ export default function BrowseList(props) {
   }, []);
 
   if(error) {
-    return <pre>{JSON.stringify(error, null, 2)}</pre>;
+    return <h1>There has been an error, please try again.</h1>;
   }
-  
-  if(!books) {
-    return null;
-  }
-  
+
   let bookList = books.docs;
   
+  const loading = () => {
+    return <h1>Loading...</h1>
+  }
 
-  return (
-    <div className='bookList'>
-      <ul className='bookList'>
-        {bookList.map((item, i) => {
-          return (
-          <li key = {i} className='bookList-item'>
-            <i className='icon'></i>
-            &nbsp;
-            {item.title}
-            </li>
-          );
-        })}
-      </ul>
-    </div>
-  )
+  const loaded = () => {
+    return (
+      <div className='bookList'>
+        <Search />
+        <ul className='bookList'>
+          {bookList.map((item, i) => {
+            return (
+            <li key = {i} className='bookList-item'>
+              <i className='icon'></i>
+              &nbsp;
+              {item.title}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    )
+  };
+  return <section>{books ? loaded() : loading()}</section>;
 }
