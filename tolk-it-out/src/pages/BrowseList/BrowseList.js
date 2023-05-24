@@ -21,6 +21,18 @@ export default function BrowseList(props) {
   }
 
   let bookList = books.docs;
+
+  const handleSearch = (search) => {
+    setSearch(search);
+    if(search !== ""){
+      const results = bookList.filter((book) => {
+        return Object.values(book)
+        .join(" ")
+        .toLowerCase()
+        .includes(search.toLowerCase())
+      })
+    }
+  }
   
   const loading = () => {
     return <h1>Loading...</h1>
@@ -29,7 +41,7 @@ export default function BrowseList(props) {
   const loaded = () => {
     return (
       <div className='bookList'>
-        <Search />
+        <Search term={search} searchKeyword={handleSearch}/>
         <ul className='bookList'>
           {bookList.map((item, i) => {
             return (
