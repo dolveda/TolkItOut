@@ -30,10 +30,15 @@ export default function BrowseList(props) {
         .join(" ")
         .toLowerCase()
         .includes(search.toLowerCase())
-      })
+      });
+      setSearchResults(results);
+    } else {
+      setSearchResults(bookList);
     }
-  }
-  
+  };
+
+  console.log(searchResults);
+
   const loading = () => {
     return <h1>Loading...</h1>
   }
