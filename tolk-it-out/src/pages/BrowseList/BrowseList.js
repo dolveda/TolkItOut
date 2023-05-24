@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import Search from '../../components/Search/Search';
+import { Link } from 'react-router-dom';
 
 export default function BrowseList(props) {
   const [books, setBooks] = useState("");
@@ -32,6 +33,7 @@ export default function BrowseList(props) {
         .includes(search.toLowerCase())
       });
       setSearchResults(results);
+      console.log(searchResults)
     } else {
       setSearchResults(bookList);
     }
@@ -52,7 +54,9 @@ export default function BrowseList(props) {
               <li key = {i} className='bookList-item'>
               <i className='icon'></i>
               &nbsp;
-              {item.title}
+              <Link to={`/book/${item.title}`} state={{item:item}}>
+                {item.title}
+              </Link> 
               </li>
             );
           })}
