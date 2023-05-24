@@ -33,7 +33,6 @@ export default function BrowseList(props) {
         .includes(search.toLowerCase())
       });
       setSearchResults(results);
-      console.log(searchResults)
     } else {
       setSearchResults(bookList);
     }
