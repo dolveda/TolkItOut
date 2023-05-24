@@ -13,7 +13,7 @@ export default function Book() {
             <div>
                 <h1 className="title">{item.title}</h1>
                 <br/>
-                <div>
+                <div className="bookInfo">
                     <h3>Info:</h3>
                     <ul>
                         <li>First Published: {item.first_publish_year}</li>
@@ -24,7 +24,7 @@ export default function Book() {
                         <li>Places: {item.place}</li>
                     </ul>
                     <br/>
-                    <section>
+                    <section className="link">
                         <p>For more info please click the following link to Open Library and select your language:</p>
                         <a href={"https:/openlibrary.org" + item.key} target="_blank" rel="noopener noreferrer">{item.title}</a>
                     </section>
